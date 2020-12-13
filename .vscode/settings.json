@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/abfc260f-39c0-4e54-bdef-abf5664f7685/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/gradifyapp",
+    "appService.deploySubpath": "."
+}

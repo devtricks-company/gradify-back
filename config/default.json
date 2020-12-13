@@ -1,0 +1,11 @@
+{
+    
+        "DBuser":"JaySobhani",
+        "DBpassword":"GRADifyTeam2021!",
+        "DBserver":"gradify1server.database.windows.net",
+        "DBdatabase":"GRADify1_db",
+        "PORT":4000,
+        "SECRETKEY":"GARDIFY SECRET KEY IS",
+        "SECRETKEYADMIN":"GARDIFY SECRET KEY IS ADMIN"
+
+}
