@@ -5,7 +5,7 @@ async function main(email,code) {
   // Generate test SMTP service account from ethereal.email
   // Only needed if you don't have a real mail account for testing
   let testAccount = await nodemailer.createTestAccount();
-    console.log(code);
+    
   // create reusable transporter object using the default SMTP transport
   let transporter = nodemailer.createTransport({
     service:"gmail",
@@ -20,8 +20,8 @@ async function main(email,code) {
     from: 'amirm.azarbashi@gmail.com', // sender address
     to: email, // list of receivers
     subject: "Verification Code ✔", // Subject line
-    text: code.toString(), // plain text body
-    html: `<b>Verification code is : ${code.toString()}</b>`, // html body
+    text: String(code), // plain text body
+    html: `<b>Verification code is : ${code}</b>`, // html body
   });
 
   console.log("Message sent: %s", info.messageId);

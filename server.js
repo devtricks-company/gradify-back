@@ -16,6 +16,6 @@ DBConnecting();
 app.use('/student',require('./routes/student'));
 app.use('/admin',require('./routes/admin'));
 
-app.listen(config.get("PORT"),() => {
-    console.log('server is running on port 4000');
+app.listen(process.env.PORT || config.get("PORT"),() => {
+    console.log(`server is running on port ${process.env.PORT || config.get("PORT")}`);
 })
