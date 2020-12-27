@@ -15,6 +15,7 @@ DBConnecting();
 
 app.use('/student',require('./routes/student'));
 app.use('/admin',require('./routes/admin'));
+app.use('/adauth',require('./routes/adauth'));
 
 app.listen(process.env.PORT || config.get("PORT"),() => {
     console.log(`server is running on port ${process.env.PORT || config.get("PORT")}`);

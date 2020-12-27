@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "adal-node": "^0.2.1",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.0",
     "config": "^3.3.3",
@@ -18,8 +19,10 @@
     "express": "^4.17.1",
     "express-validator": "^6.7.0",
     "jsonwebtoken": "^8.5.1",
+    "ms-rest": "^2.5.4",
     "mssql": "^6.2.3",
-    "nodemailer": "^6.4.16"
+    "nodemailer": "^6.4.16",
+    "powerbi-api": "^1.2.3"
   },
   "devDependencies": {
     "nodemon": "^2.0.6"

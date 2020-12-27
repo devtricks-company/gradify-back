@@ -88,11 +88,31 @@ module.exports = () => {
         }
     }
 
+    const getStudentByEmail = async (req,res) => {
+        const email = req.params.email;
+        
+        try {
+            const student = await Student.GetStudentByEmail(email);
+            if(student){
+                return res.status(400).json({status:false,msg:"Email is already exist"});
+            }
+           res.status(200).json({status:true});
+          
+
+
+        } catch (error) {
+            
+            res.status(500).json({msg:"Internal server errors"});
+        }
+
+    }
+
     return{
         resgisterStudentController,
         loginStudent,
         getAllStudentController,
-        getAStudentController
+        getAStudentController,
+        getStudentByEmail
        
     }
 }

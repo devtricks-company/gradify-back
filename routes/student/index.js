@@ -18,5 +18,6 @@ route.post('/',ValidationReq.checkRegisterStudent(),ValidationReq.validate,stude
 route.post('/login',ValidationReq.checkLogin(),ValidationReq.validate,studentCTL.loginStudent)
 route.get('/',studentCTL.getAllStudentController);
 route.get('/:id',studentCTL.getAStudentController);
+route.get('/checkemail/:email',studentCTL.getStudentByEmail);
 
 module.exports = route;
